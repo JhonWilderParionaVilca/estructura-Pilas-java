@@ -97,7 +97,7 @@ public class Pila<Tipo> {
             auxCadaElemento = auxCadaElemento.getSiguiente();
         }
         pilaOutput.push((Tipo) auxCadaElemento.getElemento());
-        
+
         clear();
         inicial = pilaOutput.inicial;
         return this;
@@ -119,10 +119,10 @@ public class Pila<Tipo> {
         }
         return this;
     }
-    
+
     private NodoPila recorrerUnoAntesBuscado(NodoPila aux1AntesB, Tipo datoB) throws Exception{
         if (!aux1AntesB.getElemento().equals(datoB)) {
-            while (aux1AntesB.getSiguiente() != null && !aux1AntesB.getSiguiente().getElemento().equals(datoB)) {                
+            while (aux1AntesB.getSiguiente() != null && !aux1AntesB.getSiguiente().getElemento().equals(datoB)) {
                 aux1AntesB = aux1AntesB.getSiguiente();
             }
             if (aux1AntesB.getSiguiente() == null) {
@@ -132,7 +132,7 @@ public class Pila<Tipo> {
         /*si el elemento buscado es el primero retornamos ese sino se busaca y se retorna*/
         return aux1AntesB;
     }
-    
+
     public Tipo getDatoIndex(int index){
         NodoPila actual = inicial;
         int contador = 0;
@@ -141,10 +141,10 @@ public class Pila<Tipo> {
             actual = actual.getSiguiente();
             contador++;
         }
-        
+
         return (Tipo) actual.getElemento();
     }
-    
+
     /**
      * @return the tamanio
      */
