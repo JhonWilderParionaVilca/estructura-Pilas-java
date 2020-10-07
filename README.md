@@ -5,3 +5,5 @@
 <p align="center">
     <img src="assets/video/pilas.gif" alt="gif pilas">
 </p>
+
+## CONTRIBUTORS ✨
